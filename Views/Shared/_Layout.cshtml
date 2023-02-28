@@ -1,0 +1,124 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.title</title>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    @*@Styles.Render("~/Content/iconScout")*@
+    @Styles.Render("~/Content/style")
+</head>
+<body onload="pageLoad()">
+    <nav>
+        <div class="container nav__container">
+            <a href="Home/index"><h4>GOUNI</h4></a>
+            <ul class="nav__menu">
+             
+         <li>@Html.ActionLink("Home", "Index", "Home", new { area = "" }, new { @class = "" })</li>
+        <li>@Html.ActionLink("About", "About", "Home", new { area = "" }, new { @class = "" })</li>
+        <li>@Html.ActionLink("Courses", "Courses", "Home", new { area = "" }, new { @class = "" })</li>
+        <li>@Html.ActionLink("Contact", "Contact", "Home", new { area = "" }, new { @class = "" })</li>
+            </ul>
+            <button id="open-menu-btn"><i class="uil uil-bars"></i></button>
+            <button id="close-menu-btn"><i class="uil uil-multiply"></i></button>
+        </div>
+    </nav>
+
+
+
+    <div>
+        @RenderBody()
+        <hr />
+        <footer class="footer">
+            <div class="container footer__containter">
+                <div class="footer__1">
+                    <a href="index.html" class="footer__logo"><h4>GOUNI</h4></a>
+                    <p>
+                        Information Technology (IT) is increasingly recognised as the key enabler in promoting 
+                        knowledge-based growth.
+                    </p>
+                </div>
+
+                <div class="footer__2">
+                    <h4>Permalinks</h4>
+                    <ul class="permalinks">
+                        <li><a href="Home/index">Home</a></li>
+                        <li><a href="Home/index">About</a></li>
+                        <li><a href="Home/index">Courses</a></li>
+                        <li><a href="Home/index">Contact</a></li>
+
+                    </ul>
+                </div>
+
+
+                <div class="footer__3">
+                    <h4>Privacy</h4>
+                    <ul class="privacy">
+                        <li><a href="Home/index">Privacy Policy</a></li>
+                        <li><a href="Home/index">Terms and Conditions</a></li>
+                        <li><a href="Home/index">Return Policy</a></li>
+
+                    </ul>
+                </div>
+
+                <div class="footer__4">
+                    <h4>Contact Us</h4>
+                    <div class="contact">
+                        <p>+14 96542 6252 </p>
+                        <p>ozolit24@gmail.com </p>
+
+                    </div>
+                    <ul class="footer__socials">
+                        <li>
+                            <a href="#"><i class="uil uil-facebook-f"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="uil uil-instagram-alt"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="uil uil-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="uil uil-linkedin-alt"></i></a>
+                        </li>
+                    </ul>
+                </div>
+
+                
+                
+            </div>
+            <div class="footer__copyright">
+                <small>&copy; @DateTime.Now.Year - My ASP.NET Application</small>        
+            </div>
+        </footer>
+    </div>
+
+
+    @Scripts.Render("~/bundles/main")
+    @RenderSection("scripts", required: false)
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            breakpoints: {
+                250: {
+                    slidesPerView: 1,
+                    
+                },
+            },
+            
+            spaceBetween: 30,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            //when window with is >=600px
+            breakpoints: {
+                600: {
+                    slidesPerView :3
+                }
+            }
+        });
+    </script>
+</body>
+</html>

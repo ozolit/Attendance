@@ -1,0 +1,330 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>GOUNI Attendance System</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    
+    @*<link href="https://fonts.googleapis.com/icon?family=Material+Icons+sharp" rel="stylesheet">*@
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+
+    @Styles.Render("~/Content/adminlayout")
+</head>
+<body>
+    <div class="container">
+        <aside>
+            <div class="top">
+                <div class="logo">
+                    <img src="~/images/gouni-logo.png">
+                    <h2>GO<span class="danger">UNI</span></h2>
+                </div>
+                <div class="close" id="close-btn">
+                    <i class="uil uil-times-square"></i>
+                </div>
+            </div>
+            <div class="sidebar">
+                <a href="#" class="activee">
+                    <i class="uil uil-apps"></i>
+                    <h3>Dashboard</h3>
+                </a>
+                <a href="#">
+                    <i class="uil uil-layer-group"></i>
+                    <h3>Number Attended</h3>
+                </a>
+                <a href="#">
+                    <i class="uil uil-layer-group"></i>
+                    <h3>Initiate Attendance</h3>
+                </a>
+                <a href="#">
+                    <i class="uil uil-bell-school"></i>
+                    <h3>Create Event</h3>
+                </a>
+                <a href="#">
+                    <i class="uil uil-house-user"></i>
+                    <h3>Create Hall</h3>
+                </a>
+                <a href="#">
+                    <i class="uil uil-setting"></i>
+                    <h3>Settings</h3>
+                </a>
+
+                <a href="#">
+                    <i class="uil uil-file-medical-alt"></i>
+                    <h3>Report</h3>
+                </a>
+
+                <a href="#">
+                    <i class="uil uil-analysis"></i>
+                    <h3>Analytics</h3>
+                </a>
+
+                <a href="#">
+                    <i class="uil uil-sign-out-alt"></i>
+                    <h3>Logout</h3>
+                </a>
+
+            </div>
+        </aside>
+        <!--===========END OF ASIDE============-->
+        <main>
+            <h1>Dashboard</h1>
+            <div class="date">
+                <input type="date" />
+            </div>
+            <div class="insight">
+                <div class="sales">
+                    <div><i class="uil uil-analysis"></i></div>
+                    <div class="middle">
+                        <div class="left">
+                            <h3>Total Sales</h3>
+                            <h1>$25,024</h1>
+                        </div>
+                        <div class="progress">
+                            <svg>
+                                <circle cx="38" cy="38" r="36"></circle>
+                            </svg>
+                            <div class="number">
+                                <p>81%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <small class="text-muted">Last 24 Hours</small>
+                </div>
+                <!--===================END OF SALES===============-->
+
+                <div class="expenses">
+                    <i class="uil uil-signal-alt-3"></i>
+                    <div class="middle">
+                        <div class="left">
+                            <h3>Total Expenses</h3>
+                            <h1>$14,160</h1>
+                        </div>
+                        <div class="progress">
+                            <svg>
+                                <circle cx="38" cy="38" r="36"></circle>
+                            </svg>
+                            <div class="number">
+                                <p>62%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <small class="text-muted">Last 24 Hours</small>
+                </div>
+                <!--===================END OF EXPENSES===============-->
+
+
+                <div class="income">
+                    <i class="uil uil-graph-bar"></i>
+                    <div class="middle">
+                        <div class="left">
+                            <h3>Total Income</h3>
+                            <h1>$10,300</h1>
+                        </div>
+                        <div class="progress">
+                            <svg>
+                                <circle cx="38" cy="38" r="36"></circle>
+                            </svg>
+                            <div class="number">
+                                <p>44%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <small class="text-muted">Last 24 Hours</small>
+                </div>
+                <!--===================END OF INCOME===============-->
+
+
+            </div>
+            <!--===================END OF INSIGHT===============-->
+
+            <div class="recent-attendance">
+                <h2>Recent Attendance</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Reg Number</th>
+                            <th>Level</th>
+                            <th>Event Hall</th>
+                            <th>Date</th>
+                            <th>Details</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Marcel Ijeuwa</td>
+                            <td>GOU/U23/NAS/001</td>
+                            <td>100</td>
+                            <td>Savator</td>
+                            <td>12/12/1990</td>
+                            <td class="primary">Details</td>
+                        </tr>
+                        <tr>
+                            <td>Marcel Ijeuwa</td>
+                            <td>GOU/U23/NAS/001</td>
+                            <td>100</td>
+                            <td>Savator</td>
+                            <td>12/12/1990</td>
+                            <td class="primary">Details</td>
+                        </tr>
+                        <tr>
+                            <td>Marcel Ijeuwa</td>
+                            <td>GOU/U23/NAS/001</td>
+                            <td>100</td>
+                            <td>Savator</td>
+                            <td>12/12/1990</td>
+                            <td class="primary">Details</td>
+                        </tr>
+                        <tr>
+                            <td>Marcel Ijeuwa</td>
+                            <td>GOU/U23/NAS/001</td>
+                            <td>100</td>
+                            <td>Savator</td>
+                            <td>12/12/1990</td>
+                            <td class="primary">Details</td>
+                        </tr>
+                        <tr>
+                            <td>Marcel Ijeuwa</td>
+                            <td>GOU/U23/NAS/001</td>
+                            <td>100</td>
+                            <td>Savator</td>
+                            <td>12/12/1990</td>
+                            <td class="primary">Details</td>
+                        </tr>
+                        <tr>
+                            <td>Marcel Ijeuwa</td>
+                            <td>GOU/U23/NAS/001</td>
+                            <td>100</td>
+                            <td>Savator</td>
+                            <td>12/12/1990</td>
+                            <td class="primary">Details</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <a href="#">Show All</a>
+            </div>
+            
+        </main>
+        <!--==============END OF MAIN===============-->
+        <div class="right">
+            <div class="top">
+                <button>
+                    <i class="uil uil-bars"></i>
+                </button>
+                <div class="theme-toggler">
+                    <i class="uil uil-sun activee"></i>
+                    <i class="uil uil-moon"></i>
+                </div>
+                <div class="profile">
+                    <div class="info">
+                        <p>Welcome,<b>Admin</b></p>
+                    </div>
+                    <div class="profile-photo">
+                        <img src="~/images/gouni-logo.png" />
+                    </div>
+                </div>
+
+            </div>
+            <!--========END OF TOP=======-->
+
+            <div class="recent-updates">
+                <h2>Recent Updates</h2>
+                <div class="updates">
+                    <div class="update">
+                        <div class="profile-photo">
+                            <img src="~/images/gouni-logo.png" />
+                        </div>
+
+                        <div class="message">
+                            <p><b>Emma Nwoye</b> Attended</p>
+                            <small class="text-muted">2 Minutes Ago</small>
+                        </div>
+                    </div>
+                
+
+                
+
+                    <div class="update">
+                        <div class="profile-photo">
+                            <img src="~/images/Course1.jpg" />
+                        </div>
+                        <div class="message">
+                            <p><b>Emma Nwoye</b> Attended</p>
+                            <small class="text-muted">2 Minutes Ago</small>
+                        </div>
+                    </div>
+                
+
+                
+                    <div class="update">
+                        <div class="profile-photo">
+                            <img src="~/images/Course2.jpg" />
+                        </div>
+                        <div class="message">
+                            <p><b>Emma Nwoye</b> Attended</p>
+                            <small class="text-muted">2 Minutes Ago</small>
+                        </div>
+                    </div>
+                </div>
+            <!--====================END OF TO==============================-->
+            <div class="sales-analytics">
+                <h2>Attendance Report</h2>
+                <div class="attendee online">
+                    <div class="icon">
+                        <i class="uil uil-user-location"></i>
+                    </div>
+                    <div class="right">
+                        <div class="info">
+                            <h3>ONLINE STUDENT</h3>
+                            <small class="text-muted">Last 24 hours</small>
+                        </div>
+                        <h5 class="success">25%</h5>
+                        <h3>3849</h3>
+                    </div>
+                </div>
+
+                <div class="attendee online">
+                    <div class="icon">
+                        <i class="uil uil-user-location"></i>
+                    </div>
+                    <div class="right">
+                        <div class="info">
+                            <h3>ABSENT STUDENT</h3>
+                            <small class="text-muted">Last 24 hours</small>
+                        </div>
+                        <h5 class="warning">25%</h5>
+                        <h3>3849</h3>
+                    </div>
+                </div>
+
+                <div class="attendee offline">
+                    <div class="icon">
+                        <i class="uil uil-user-location"></i>
+                    </div>
+                    <div class="right">
+                        <div class="info">
+                            <h3>OFFLINE STUDENT</h3>
+                            <small class="text-muted">Last 24 hours</small>
+                        </div>
+                        <h5 class="danger">25%</h5>
+                        <h3>3849</h3>
+                    </div>
+                </div>
+
+                <div class="attendee add-event">
+                    <div>
+                        <i class="uil uil-plus-circle"></i>
+                        <h3>Add Event</h3>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    
+    <div>
+        @RenderBody()
+    </div>
+</body>
+</html>
